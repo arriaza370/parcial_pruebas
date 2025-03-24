@@ -1,0 +1,99 @@
+{
+  "id": "229a8d2c-b834-487d-99b0-334497df13c0",
+  "version": "2.0",
+  "name": "prueba_selenium",
+  "url": "http://localhost/php_selenium_jmeter-main/index.php",
+  "tests": [{
+    "id": "628ed713-66eb-40fa-83fd-5722e2730e83",
+    "name": "prueba_selenium",
+    "commands": [{
+      "id": "c742a9ac-350a-4f86-9b34-b8a4e27b023a",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/php_selenium_jmeter-main/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4e9e8ae8-3fc3-47d8-8ff5-950bfe1fc4b9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "524x779",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1dbccef2-e56a-45bb-b8ca-1c83a88b036f",
+      "comment": "",
+      "command": "click",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=#login-form input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='login-form']/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e585c305-686c-4a33-86a7-0488c2716ddc",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=#login-form input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='login-form']/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "maxito123@hotmail.com"
+    }, {
+      "id": "35c9c381-29de-42e1-b36b-9f291124483a",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=#login-form input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login-form']/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "c15c41b0-1ff0-4f1e-9f2f-861d953dda0c",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=#login-form input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login-form']/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "8e29ca6b-8c50-4a5a-bc03-5bf6c4d278cd",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@onclick=\"window.location.href='logout.php'\"]", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cerrar Sesión')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "982e0e4f-c6cb-4a14-94eb-e535c5855545",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost/", "http://localhost/php_selenium_jmeter-main/index.php"],
+  "plugins": []
+}
