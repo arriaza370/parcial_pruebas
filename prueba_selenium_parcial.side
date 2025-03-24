@@ -2,7 +2,7 @@
   "id": "229a8d2c-b834-487d-99b0-334497df13c0",
   "version": "2.0",
   "name": "prueba_selenium",
-  "url": "http://localhost/php_selenium_jmeter-main/index.php",
+  "url": "http://localhost/parcial_max/index.php",
   "tests": [{
     "id": "628ed713-66eb-40fa-83fd-5722e2730e83",
     "name": "prueba_selenium",
@@ -10,7 +10,7 @@
       "id": "c742a9ac-350a-4f86-9b34-b8a4e27b023a",
       "comment": "",
       "command": "open",
-      "target": "http://localhost/php_selenium_jmeter-main/index.php",
+      "target": "http://localhost/parcial_max/index.php",
       "targets": [],
       "value": ""
     }, {
@@ -94,6 +94,6 @@
     "timeout": 300,
     "tests": []
   }],
-  "urls": ["http://localhost/", "http://localhost/php_selenium_jmeter-main/index.php"],
+  "urls": ["http://localhost/", "http://localhost/parcial_max/index.php"],
   "plugins": []
 }
